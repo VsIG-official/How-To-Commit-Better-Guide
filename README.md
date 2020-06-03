@@ -1,4 +1,4 @@
-# How To Commit Template
+# How To Commit Guide
  
  Everything will be changed after some time, 'cause right now I want to make this and use in My commits
 
