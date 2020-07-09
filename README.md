@@ -1,18 +1,3 @@
-Looks great, right? Here's how you can make yours great too:
- 
-
-
-    > Separate the subject from the body with a blank line
-    > Your commit message should not contain any whitespace errors
-    > Remove unnecessary punctuation marks
-    > Do not end the subject line with a period
-    > Capitalize the subject line and each paragraph
-    > Use the imperative mood in the subject line
-    > Use the body to explain what changes you have made and why you made them.
-    > Do not assume the reviewer understands what the original problem was, ensure you add it.
-    > Do not think your code is self-explanatory
-    > Follow the commit convention defined by your team
-
 # Guide "How to commit better"
 
 <p align="center">
@@ -63,6 +48,17 @@ Commit message composition is just as important as naming your variables and met
     - chore: Updating grunt tasks etc; no production code change
     > chore: add Oyster build script
     [ You can also use emojis to represent commit types]
+    
+    
+    
+   Specify the size of commit (optional):
+ 
+    - s: small
+    > s(feat):blabla
+    - m: middle
+    > m(feat):blabla
+    - b: big
+    > b(feat):blabla
 
 3. Make your changes in each commit atomic
 
@@ -77,6 +73,42 @@ Early in our project, we had some team members who would work all day before com
 Did you ever wish you could go back in time and Marty McFly some of the bad code you committed? Well, with Git, you can. Should you? Not if you’re working with others and your commits have already been pushed. Otherwise, just be careful. If you’ve seen Back to the Future, you already know why it’s a bad idea to change the past.
 
 In Git, you can go back in time, rebase different branches on to other branches. You can also delete commits, rename them, squash them into single commits, and much more. If you are the only developer and it is your local machine, you tend to have more freedom than if you are working on a team. If you are working in a team that shares the same history, rewriting that history will just upset them. Git gives you the freedom to create branches and merge them back together later on, so in many cases, rewriting history isn’t necessary. Since Git already gives you the ability to checkout any previous commit, it makes sense to not alter any of your past commits so you can use any of them as a point of reference in the future.
+
+6. Some small, but useful rules:
+    1) The first line of the commit message should be a short description (50 characters is the soft limit), and should skip the full stop
+    <p align="center">
+       <img src="https://i.imgur.com/zyBU2l6.png">
+    </p>
+    And will truncate any subject line longer than 72 characters with an ellipsis:
+    <p align="center">
+       <img src="https://i.imgur.com/27n9O8y.png">
+    </p>
+    2) The body should provide a meaningful commit message, which:
+        2.1) uses the imperative, present tense: “change” not “changed” or “changes”:
+            bad: "Renamed the iVars and removed the common prefix"
+            good: "Rename the iVars to remove the common prefix"
+        2.2) includes motivation for the change, and contrasts its implementation with previous behaviour.
+    3) Referencing issues. Closed issues should be listed on a separate line in the footer prefixed with "Closes" keyword like this:
+        Closes #234
+    or in case of multiple issues:
+        Closes #123, #245, #992
+    4) Separate the subject from the body with a blank line
+    5) Your commit message should not contain any whitespace errors
+    6) Remove unnecessary punctuation marks
+    7) Do not end the subject line with a period
+       bad: Open the pod bay doors.
+       good: Open the pod bay doors
+    8) Capitalize the subject line and each paragraph
+       bad: accelerate to 88 miles per hour
+       good: Accelerate to 88 miles per hour
+    10) Use the body to explain what changes you have made and why you made them.
+    11) Do not assume the reviewer understands what the original problem was, ensure you add it.
+    12) Do not think your code is self-explanatory
+    13) Follow the commit convention defined by your team
+    14) Bullet points are okay, too
+    15) Typically a hyphen or asterisk is used for the bullet, preceded
+        by a single space, with blank lines in between, but conventions
+        vary here
 
 ## Badges
 
