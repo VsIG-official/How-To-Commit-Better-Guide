@@ -50,7 +50,7 @@ Commit message composition is just as important as naming your variables and met
     [ You can also use emojis to represent commit types]
     
     
-    
+   
    Specify the size of commit (optional):
  
     - s: small
@@ -98,17 +98,59 @@ In Git, you can go back in time, rebase different branches on to other branches.
     7) Do not end the subject line with a period
        bad: Open the pod bay doors.
        good: Open the pod bay doors
+       
+    If applied, this commit will your subject line here
+    For example:
+
+    If applied, this commit will refactor subsystem X for readability
+    If applied, this commit will update getting started documentation
+    If applied, this commit will remove deprecated methods
+    If applied, this commit will release version 1.0.0
+    If applied, this commit will merge pull request #123 from user/branch
+
+      Notice how this doesn’t work for the other non-imperative forms:
+
+    If applied, this commit will fixed bug with Y
+    If applied, this commit will changing behavior of X
+    If applied, this commit will more fixes for broken stuff
+    If applied, this commit will sweet new API methods
+
     8) Capitalize the subject line and each paragraph
        bad: accelerate to 88 miles per hour
        good: Accelerate to 88 miles per hour
     10) Use the body to explain what changes you have made and why you made them.
+    
+    This commit from Bitcoin Core is a great example of explaining what changed and why:
+
+    commit eb0b56b19017ab5c16c745e6da39c53126924ed6
+    Author: Pieter Wuille <pieter.wuille@gmail.com>
+    Date:   Fri Aug 1 22:57:55 2014 +0200
+
+   Simplify serialize.h's exception handling
+
+   Remove the 'state' and 'exceptmask' from serialize.h's stream
+   implementations, as well as related methods.
+
+   As exceptmask always included 'failbit', and setstate was always
+   called with bits = failbit, all it did was immediately raise an
+   exception. Get rid of those variables, and replace the setstate
+   with direct exception throwing (which also removes some dead
+   code).
+
+   As a result, good() is never reached after a failure (there are
+   only 2 calls, one of which is in tests), and can just be replaced
+   by !eof().
+
+   fail(), clear(n) and exceptions() are just never called. Delete
+   them.
+
+    In most cases, you can leave out details about how a change has been made. Code is generally self-explanatory in this regard (and if the code is so complex that it needs    to be explained in prose, that’s what source comments are for). Just focus on making clear the reasons why you made the change in the first place—the way things worked before the change (and what was wrong with that), the way they work now, and why you decided to solve it the way you did.
+    
     11) Do not assume the reviewer understands what the original problem was, ensure you add it.
     12) Do not think your code is self-explanatory
     13) Follow the commit convention defined by your team
     14) Bullet points are okay, too
-    15) Typically a hyphen or asterisk is used for the bullet, preceded
-        by a single space, with blank lines in between, but conventions
-        vary here
+    15) Typically a hyphen or asterisk is used for the bullet, preceded by a single space, with blank lines in between, but conventions vary here
 
 ## Badges
 
