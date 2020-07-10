@@ -13,11 +13,9 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-### Description
+## Description
 
 > This is My guide "How to commit better". There You'll find some useful stuff to write Your commits better
-
-#Git #Commit
 
 ## Tips
 
@@ -186,4 +184,4 @@ In Git, you can go back in time, rebase different branches on to other branches.
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2020 © <a href="https://github.com/VsIG-official" target="_blank">VsIG</a>.
+- Copyright 2020 © [VsIG](https://github.com/VsIG-official).
