@@ -112,21 +112,26 @@ and will truncate any subject line longer than **72 characters** with an ellipsi
     - **good**: Open the pod bay doors
 
 - If applied, this commit will your subject line here. For example:
-```
 
-```
-- If applied, this commit will refactor subsystem X for readability.
-- If applied, this commit will update getting started documentation
-- If applied, this commit will remove deprecated methods
-- If applied, this commit will release version 1.0.0
-- If applied, this commit will merge pull request #123 from user/branch
-
-> Notice how this doesn’t work for the other non-imperative forms:
-
-- If applied, this commit will fixed bug with Y
-- If applied, this commit will changing behavior of X
-- If applied, this commit will more fixes for broken stuff
-- If applied, this commit will sweet new API methods
+> If applied, this commit will refactor subsystem X for readability.
+>
+> If applied, this commit will update getting started documentation
+>
+> If applied, this commit will remove deprecated methods
+>
+> If applied, this commit will release version 1.0.0
+>
+> If applied, this commit will merge pull request #123 from user/branch
+>
+>> Notice how this doesn’t work for the other non-imperative forms:
+>
+> If applied, this commit will fixed bug with Y
+>
+> If applied, this commit will changing behavior of X
+>
+> If applied, this commit will more fixes for broken stuff
+>
+> If applied, this commit will sweet new API methods
 
 - Capitalize the subject line and each paragraph
     - **bad**: accelerate to 88 miles per hour
