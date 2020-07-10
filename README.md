@@ -7,7 +7,7 @@
 ## Table of Contents
 
 - [Description](#description)
-- [Tips](#tips)
+- [Rules](#rules)
 - [Badges](#badges)
 - [Example](#example)
 - [Contributing](#contributing)
@@ -17,7 +17,7 @@
 
 This is My guide "How to commit better". There You'll find some useful stuff to write **Your** commits better.
 
-## Tips
+## Rules
 
 > or guide itself
 
@@ -92,10 +92,10 @@ and will truncate any subject line longer than **72 characters** with an ellipsi
 </p>
 
 - The body should provide a meaningful commit message, which:
-    1. uses the imperative, present tense: “change” not “changed” or “changes”:
+    - uses the imperative, present tense: “change” not “changed” or “changes”:
         - **bad**: "Renamed the iVars and removed the common prefix"
         - **good**: "Rename the iVars to remove the common prefix"
-    2. includes motivation for the change, and contrasts its implementation with previous behaviour.
+    - includes motivation for the change, and contrasts its implementation with previous behaviour.
 
 - **Referencing** issues. Closed issues should be listed on a separate line in the footer prefixed with "Closes" keyword like this:
     - Closes [#234](link)
@@ -141,13 +141,13 @@ This commit from Bitcoin Core is a great example of explaining what changed and 
 
 `Date:   Fri Aug 1 22:57:55 2014 +0200`
 
-Simplify serialize.h's exception handling
+`Simplify serialize.h's exception handling`
 
-Remove the 'state' and 'exceptmask' from serialize.h's stream implementations, as well as related methods.
+`Remove the 'state' and 'exceptmask' from serialize.h's stream implementations, as well as related methods.`
 
-As exceptmask always included 'failbit', and setstate was always called with bits = failbit, all it did was immediately raise an exception. Get rid of those variables, and replace the setstate with direct exception throwing (which also removes some dead code).
+`As exceptmask always included 'failbit', and setstate was always called with bits = failbit, all it did was immediately raise an exception. Get rid of those variables, and replace the setstate with direct exception throwing (which also removes some dead code).`
 
-As a result, good() is never reached after a failure (there are only 2 calls, one of which is in tests), and can just be replaced by !eof(). fail(), clear(n) and exceptions() are just never called. Delete them.
+`As a result, good() is never reached after a failure (there are only 2 calls, one of which is in tests), and can just be replaced by !eof(). fail(), clear(n) and exceptions() are just never called. Delete them.`
 
 In most cases, you can leave out details about how a change has been made. Code is generally self-explanatory in this regard (and if the code is so complex that it needs    to be explained in prose, that’s what source comments are for). Just focus on making clear the reasons why you made the change in the first place—the way things worked before the change (and what was wrong with that), the way they work now, and why you decided to solve it the way you did.
 
