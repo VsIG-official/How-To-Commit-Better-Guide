@@ -108,7 +108,7 @@ and will truncate any subject line longer than **72 characters** with an ellipsi
 - Your commit message should not contain any **whitespace** errors
 - Remove **unnecessary** punctuation marks
 - **Do not end** the subject line with a period
-    - **bad**: Open the pod bay doors.
+    - **bad**: Open the pod bay doors **.**
     - **good**: Open the pod bay doors
 
 - If applied, this commit will your subject line here. For example:
