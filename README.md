@@ -49,13 +49,13 @@ Specify the type of commit:
 > chore: add Oyster build script
 
 You can also use [emojis](https://getemoji.com/) to represent commit types.
-    
+
 Specify **where** the changes were did (if they were in the same file (or one type of files)):
 
 `- docs: change wrong typings [*.uml]`
 
 Specify the size of commit (optional):
- 
+
 - s: small
 > s(feat):some text
 - m: middle
@@ -99,7 +99,7 @@ and will truncate any subject line longer than **72 characters** with an ellipsi
 
 - **Referencing** issues. Closed issues should be listed on a separate line in the footer prefixed with "Closes" keyword like this:
     - Closes [#234](link)
-    
+
     or in case of multiple issues:
 
     - Closes [#123](link), [#245](link), [#992](link)
@@ -110,7 +110,7 @@ and will truncate any subject line longer than **72 characters** with an ellipsi
 - **Do not end** the subject line with a period
     - **bad**: Open the pod bay doors.
     - **good**: Open the pod bay doors
-       
+
 - If applied, this commit will your subject line here. For example:
 ```
 
@@ -150,7 +150,7 @@ As exceptmask always included 'failbit', and setstate was always called with bit
 As a result, good() is never reached after a failure (there are only 2 calls, one of which is in tests), and can just be replaced by !eof(). fail(), clear(n) and exceptions() are just never called. Delete them. 
 
 In most cases, you can leave out details about how a change has been made. Code is generally self-explanatory in this regard (and if the code is so complex that it needs    to be explained in prose, that’s what source comments are for). Just focus on making clear the reasons why you made the change in the first place—the way things worked before the change (and what was wrong with that), the way they work now, and why you decided to solve it the way you did.
-    
+
 - Do not assume the reviewer understands what the original problem was, ensure you add it.
 - Do not think your code is self-explanatory
 - Follow the commit convention defined by your team
@@ -164,7 +164,7 @@ In most cases, you can leave out details about how a change has been made. Code 
 
 ## Example
 
-```Git Commit 
+```Git Commit
 
 ```
 
