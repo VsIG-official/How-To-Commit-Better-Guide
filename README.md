@@ -31,37 +31,37 @@ Imagine a box. You can put stuff into the box. You can take stuff out of the box
 
 Commit message composition is just as important as naming your variables and methods. If you’re following the first tip above, it’s very tempting to label a commit as simply “changes” or “savepoint.” Don’t fall into that hole.
 
-Specify the type of commit:
+- Specify the type of commit:
 
-- feat: The new feature you're adding to a particular application
-> feat: add beta sequence
-- fix: A bug fix
-> fix: remove broken confirmation message
-- style: Feature and updates related to styling
-> style: convert tabs to spaces
-- refactor: Refactoring a specific section of the codebase
-> refactor: share logic between 4d3d3d3 and flarhgunnstow
-- test: Everything related to testing
-> test: ensure Tayne retains clothing
-- docs: Everything related to documentation
-> docs: explain hat wobble
-- chore: Updating grunt tasks etc; no production code change
-> chore: add Oyster build script
+    - feat: The new feature you're adding to a particular application
+    > feat: add beta sequence
+    - fix: A bug fix
+    > fix: remove broken confirmation message
+    - style: Feature and updates related to styling
+    > style: convert tabs to spaces
+    - refactor: Refactoring a specific section of the codebase
+    > refactor: share logic between 4d3d3d3 and flarhgunnstow
+    - test: Everything related to testing
+    > test: ensure Tayne retains clothing
+    - docs: Everything related to documentation
+    > docs: explain hat wobble
+    - chore: Updating grunt tasks etc; no production code change
+    > chore: add Oyster build script
 
 You can also use [emojis](https://getemoji.com/) to represent commit types.
 
-Specify **where** the changes were did (if they were in the same file (or one type of files)):
+- Specify **where** the changes were did (if they were in the same file (or one type of files)):
 
-`- docs: change wrong typings [*.uml]`
+    `- docs: change wrong typings [*.uml]`
 
-Specify the size of commit (optional):
+- Specify the size of commit (optional):
 
-- s: small
-> s(feat):some text
-- m: middle
-> m(feat):some text
-- b: big
-> b(feat):some text
+    - s: small
+    > s(feat): some text
+    - m: middle
+    > m(feat): some text
+    - b: big
+    > b(feat): some text
 
 3. Make your changes in each commit **atomic**
 
@@ -165,6 +165,12 @@ In most cases, you can leave out details about how a change has been made. Code 
 ## Example
 
 ```Git Commit
+
+docs: change wrong typings [*.uml]
+
+OR
+
+s(docs): change wrong typings [*.uml]
 
 ```
 
