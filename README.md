@@ -34,34 +34,52 @@ Commit message composition is just as important as naming your variables and met
 - Specify the type of commit:
 
     - feat: The new feature you're adding to a particular application
-    > feat: add beta sequence
+    
+    `feat: add beta sequence`
+    
     - fix: A bug fix
-    > fix: remove broken confirmation message
+    
+    `fix: remove broken confirmation message`
+    
     - style: Feature and updates related to styling
-    > style: convert tabs to spaces
+    
+    `style: convert tabs to spaces`
+    
     - refactor: Refactoring a specific section of the codebase
-    > refactor: share logic between 4d3d3d3 and flarhgunnstow
+    
+    `refactor: share logic between 4d3d3d3 and flarhgunnstow`
+    
     - test: Everything related to testing
-    > test: ensure Tayne retains clothing
+    
+    `test: ensure Tayne retains clothing`
+    
     - docs: Everything related to documentation
-    > docs: explain hat wobble
+    
+    `docs: explain hat wobble`
+    
     - chore: Updating grunt tasks etc; no production code change
-    > chore: add Oyster build script
+    
+    `chore: add Oyster build script`
 
 You can also use [emojis](https://getemoji.com/) to represent commit types.
 
 - Specify **where** the changes were did (if they were in the same file (or one type of files)):
 
-    `- docs: change wrong typings [*.uml]`
+    `docs: change wrong typings [*.uml]`
 
 - Specify the size of commit (optional):
 
     - s: small
-    > s(feat): some text
+    
+    `s(feat): some text`
+    
     - m: middle
-    > m(feat): some text
+    
+    `m(feat): some text`
+    
     - b: big
-    > b(feat): some text
+    
+    `b(feat): some text`
 
 3. Make your changes in each commit **atomic**
 
@@ -140,19 +158,19 @@ Notice how this doesn’t work for the other non-imperative forms:
 
 This commit from Bitcoin Core is a great example of explaining what changed and why:
 
-`commit eb0b56b19017ab5c16c745e6da39c53126924ed6`
-
-`Author: Pieter Wuille <pieter.wuille@gmail.com>`
-
-`Date:   Fri Aug 1 22:57:55 2014 +0200`
-
-`Simplify serialize.h's exception handling`
-
-`Remove the 'state' and 'exceptmask' from serialize.h's stream implementations, as well as related methods.`
-
-`As exceptmask always included 'failbit', and setstate was always called with bits = failbit, all it did was immediately raise an exception. Get rid of those variables, and replace the setstate with direct exception throwing (which also removes some dead code).`
-
-`As a result, good() is never reached after a failure (there are only 2 calls, one of which is in tests), and can just be replaced by !eof(). fail(), clear(n) and exceptions() are just never called. Delete them.`
+> commit eb0b56b19017ab5c16c745e6da39c53126924ed6
+> 
+> Author: Pieter Wuille <pieter.wuille@gmail.com>
+> 
+> Date:   Fri Aug 1 22:57:55 2014 +0200
+> 
+> Simplify serialize.h's exception handling
+> 
+> Remove the 'state' and 'exceptmask' from serialize.h's stream implementations, as well as related methods.
+> 
+> As exceptmask always included 'failbit', and setstate was always called with bits = failbit, all it did was immediately raise an exception. Get rid of those variables, and replace the setstate with direct exception throwing (which also removes some dead code).
+> 
+> As a result, good() is never reached after a failure (there are only 2 calls, one of which is in tests), and can just be replaced by !eof(). fail(), clear(n) and exceptions() are just never called. Delete them.
 
 In most cases, you can leave out details about how a change has been made. Code is generally self-explanatory in this regard (and if the code is so complex that it needs    to be explained in prose, that’s what source comments are for). Just focus on making clear the reasons why you made the change in the first place—the way things worked before the change (and what was wrong with that), the way they work now, and why you decided to solve it the way you did.
 
