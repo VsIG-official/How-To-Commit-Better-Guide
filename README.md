@@ -115,7 +115,7 @@ and will truncate any subject line longer than **72 characters** with an ellipsi
         - **good**: "Rename the iVars to remove the common prefix"
     - includes motivation for the change, and contrasts its implementation with previous behaviour.
 
-- If applied, this commit will your subject line here. For example:
+- If applied, this commit will `your subject line here.` For example:
 
 `If applied, this commit will refactor subsystem X for readability.`
 
