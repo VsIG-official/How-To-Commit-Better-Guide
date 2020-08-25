@@ -31,37 +31,36 @@ Imagine a box. You can put stuff into the box. You can take stuff out of the box
 
 Commit message composition is just as important as naming your variables and methods. If you’re following the first tip above, it’s very tempting to label a commit as simply “changes” or “savepoint.” Don’t fall into that hole.
 
-- Specify the type of commit:
+- Specify the type of commit with word or emojis. (You can make Your own style sheet with all [emojis](https://getemoji.com/) or use one from [github](https://gitmoji.carloscuesta.me/)):
 
-    - feat: The new feature you're adding to a particular application
+    - feat / 💡: The new feature you're adding to a particular application
     
-    `feat: add beta sequence`
+    `feat / 💡: add beta sequence`
     
-    - fix: A bug fix
+    - fix / 🔧: A bug fix
     
-    `fix: remove broken confirmation message`
+    `fix / 🔧: remove broken confirmation message`
     
-    - style: Feature and updates related to styling
+    - style / 🎨: Feature and updates related to styling
     
-    `style: convert tabs to spaces`
+    `style / 🎨: convert tabs to spaces`
     
-    - refactor: Refactoring a specific section of the codebase
+    - refactor / ♻️: Refactoring a specific section of the codebase
     
-    `refactor: share logic between 4d3d3d3 and flarhgunnstow`
+    `refactor / ♻️: share logic between 4d3d3d3 and flarhgunnstow`
     
-    - test: Everything related to testing
+    - test / 🧪: Everything related to testing
     
-    `test: ensure Tayne retains clothing`
+    `test / 🧪: ensure Tayne retains clothing`
     
-    - docs: Everything related to documentation
+    - docs / 📝: Everything related to documentation
     
-    `docs: explain hat wobble`
+    `docs / 📝: explain hat wobble`
     
-    - chore: Updating grunt tasks etc; no production code change
+    - chore / 🍻: Updating grunt tasks etc; no production code change
     
-    `chore: add Oyster build script`
-
-You can also use [emojis](https://getemoji.com/) to represent commit types.
+    `chore / 🍻: add Oyster build script`
+    P.S. alcohol is bad
 
 - Specify **where** the changes were did (if they were in the same file (or one type of files)):
 
