@@ -31,7 +31,7 @@ Imagine a box. You can put stuff into the box. You can take stuff out of the box
 
 Commit message composition is just as important as naming your variables and methods. If you’re following the first tip above, it’s very tempting to label a commit as simply “changes” or “savepoint.” Don’t fall into that hole.
 
-- Specify the type of commit with word or emojis. (You can make Your own style sheet with all [emojis](https://getemoji.com/) or use one from [github](https://gitmoji.carloscuesta.me/)):
+- Specify the type of commit with word or emojis. (You can make Your own style sheet with all [emojis](https://getemoji.com/) or use one from [carloscuesta](https://gitmoji.carloscuesta.me/)):
 
     - feat / 💡: The new feature you're adding to a particular application
     
